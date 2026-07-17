@@ -10,5 +10,5 @@ python-multipart==0.0.19
 pydantic[email]==2.10.3
 pydantic-settings==2.7.0
 aiofiles==24.1.0
-Pillow==11.1.0
+Pillow==12.2.0
 resend==2.5.1
