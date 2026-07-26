@@ -43,7 +43,7 @@ docker compose up -d
 Open:
 
 ```
-http://localhost:7605
+http://localhost:7606
 ```
 
 The admin account is created automatically on the first startup using the values in `.env`.
@@ -235,7 +235,7 @@ All settings are read from `.env`. See `.env.example` for the defaults.
 | `MAX_IMAGE_SIZE` | `10485760` | Max image upload size in bytes |
 | `MAX_VIDEO_SIZE` | `104857600` | Max video upload size in bytes |
 | `RESEND_API_KEY` | empty | Resend API key, mocked when empty |
-| `VITE_API_URL` | `http://localhost:7605/api` | Frontend API base URL |
+| `VITE_API_URL` | `http://localhost:7606/api` | Frontend API base URL |
 
 ## License
 
