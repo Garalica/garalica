@@ -9,7 +9,7 @@ export default function VerificationPage() {
   const navigate = useNavigate()
   
   const [loading, setLoading] = useState(false)
-  const [codeSent, setCodeSent] = useState(false)
+  const [codeSent, setCodeSent] = useState(true)
   const [code, setCode] = useState('')
   const [error, setError] = useState('')
   const [success, setSuccess] = useState(false)
@@ -142,7 +142,7 @@ export default function VerificationPage() {
               disabled={loading}
               style={{ marginTop: '0.5rem', backgroundColor: 'transparent' }}
             >
-              Cancel
+              I need a new code
             </button>
           </form>
         )}
