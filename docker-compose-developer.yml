@@ -16,7 +16,10 @@ services:
       retries: 5
 
   backend:
-    image: ghcr.io/garalica/garalica-backend:latest
+    build:
+      context: ./backend
+      dockerfile: Dockerfile
+    image: garalica-backend:local
     container_name: garalica-backend
     restart: unless-stopped
     depends_on:
@@ -38,7 +41,10 @@ services:
       - garalica-uploads:/app/uploads
 
   frontend:
-    image: ghcr.io/garalica/garalica-frontend:latest
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile
+    image: garalica-frontend:local
     container_name: garalica-frontend
     restart: unless-stopped
     depends_on:
