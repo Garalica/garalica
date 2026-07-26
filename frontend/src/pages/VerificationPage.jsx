@@ -97,6 +97,15 @@ export default function VerificationPage() {
             >
               {loading ? 'Sending...' : 'Send Verification Code'}
             </button>
+            <button
+              type="button"
+              className="btn"
+              onClick={() => setCodeSent(true)}
+              disabled={loading}
+              style={{ width: '100%', marginTop: '0.5rem', backgroundColor: 'transparent' }}
+            >
+              I already have a code
+            </button>
           </div>
         )}
 
